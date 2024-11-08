@@ -7,90 +7,99 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9fc;
             color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f9f9fb;
         }
         header {
-            padding: 40px 20px;
-            background: #0056b3;
+            padding: 20px;
+            background: #2c3e50;
             color: #fff;
             text-align: center;
         }
-        header h1 {
+        h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        header p {
+        p.subtitle {
             font-size: 1.2em;
             margin-top: 10px;
         }
         nav {
-            background: #333;
-            padding: 10px;
+            background-color: #34495e;
+            padding: 10px 0;
             text-align: center;
         }
         nav a {
+            color: #ecf0f1;
             margin: 0 15px;
-            color: #f9f9fc;
             text-decoration: none;
-            font-size: 1.1em;
+            font-weight: bold;
         }
         nav a:hover {
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-        .highlight-course {
-            padding: 30px 20px;
-            background: #ffcc00;
-            color: #333;
-            text-align: center;
-        }
-        .highlight-course a {
-            color: #0056b3;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 1.3em;
-        }
-        .highlight-course a:hover {
-            text-decoration: underline;
+            color: #f1c40f;
         }
         .content {
-            padding: 40px 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
             text-align: center;
+            line-height: 1.6;
         }
-        .content h2 {
-            color: #0056b3;
+        .highlight-course {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
         }
-        .project-list, .course-links {
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-        .project-list a, .course-links a {
+        .highlight-course a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #c0392b;
             display: inline-block;
-            margin: 10px 0;
-            color: #0056b3;
+            margin-top: 10px;
+        }
+        .highlight-course a:hover {
+            background-color: #e74c3c;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+        }
+        li a {
+            color: #2980b9;
             text-decoration: none;
         }
-        .project-list a:hover, .course-links a:hover {
-            color: #ff6600;
+        li a:hover {
             text-decoration: underline;
+            color: #3498db;
         }
         footer {
-            padding: 20px;
-            background: #333;
-            color: #f9f9fc;
+            padding: 15px;
+            background: #2c3e50;
+            color: #bdc3c7;
             text-align: center;
-            font-size: 0.9em;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>UniRobótica</h1>
-        <p>Bem-vindo ao UniRobótica! Explore nossos projetos e cursos de robótica.</p>
+        <p class="subtitle">Explore nossos projetos e cursos de robótica para transformar o futuro.</p>
     </header>
 
     <nav>
@@ -101,33 +110,31 @@
         <a href="https://github.com/UniRobotica">Outros Repositórios</a>
     </nav>
 
-    <div class="highlight-course">
-        <p>🎉 Novo Curso Disponível!</p>
-        <p>Aprenda Python para Robótica no <a href="https://pyton.unirobotica.com.br">pyton.unirobotica.com.br</a></p>
-    </div>
-
     <div class="content">
+        <div class="highlight-course">
+            <h2>Destaque: Curso de Python</h2>
+            <p>Domine Python para robótica com nosso curso exclusivo.</p>
+            <a href="https://python.unirobotica.com.br">Acessar Curso de Python</a>
+        </div>
+
         <h2>Sobre o UniRobótica</h2>
-        <p>O UniRobótica é uma plataforma de aprendizado e desenvolvimento de robótica com foco em pesquisa e educação. Aqui você encontrará recursos, cursos e projetos voltados para a robótica educacional e industrial.</p>
+        <p>O UniRobótica é uma plataforma de aprendizado em robótica, com foco em pesquisa e educação. Aqui você encontra recursos, cursos e projetos de robótica educacional e industrial para expandir seus conhecimentos.</p>
 
         <h2>Projetos Destacados</h2>
-        <div class="project-list">
-            <a href="https://github.com/UniRobotica/cursos">Repositório de Cursos - Cursos de robótica, programação e automação.</a><br>
-            <a href="https://github.com/UniRobotica/MoveRoboEsp32Wifi">Move Robô ESP32 Wi-Fi - Controle robôs via ESP32 com conexão Wi-Fi.</a><br>
-            <a href="https://github.com/UniRobotica/Petri-nets">Petri Nets - Projetos e estudos relacionados a redes de Petri.</a><br>
-            <a href="https://github.com/UniRobotica/VSSS-BahiaRT-Testes">VSSS Bahia RT - Testes e desenvolvimento para o sistema de visão de robôs.</a>
-        </div>
+        <ul>
+            <li><a href="https://github.com/UniRobotica/cursos">Repositório de Cursos</a> - Conheça nossos cursos de robótica, programação e automação.</li>
+            <li><a href="https://github.com/UniRobotica/MoveRoboEsp32Wifi">Move Robô ESP32 Wi-Fi</a> - Controle robôs via ESP32 com conexão Wi-Fi.</li>
+            <li><a href="https://github.com/UniRobotica/Petri-nets">Petri Nets</a> - Projetos e estudos sobre redes de Petri.</li>
+            <li><a href="https://github.com/UniRobotica/VSSS-BahiaRT-Testes">VSSS Bahia RT</a> - Testes e desenvolvimento para o sistema de visão de robôs.</li>
+        </ul>
 
         <h2>Cursos</h2>
         <p>Acesse nossos cursos para se aprofundar em tópicos específicos de robótica:</p>
-        <div class="course-links">
-            <a href="https://cursos.unirobotica.com.br">Cursos da UniRobótica</a>
-        </div>
+        <p><a href="https://cursos.unirobotica.com.br">Todos os Cursos da UniRobótica</a></p>
     </div>
 
     <footer>
         <p>&copy; 2024 UniRobótica. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
