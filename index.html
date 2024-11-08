@@ -13,15 +13,13 @@
             margin: 0;
         }
         header {
-            padding: 15px;
-            max-width: 800px; /* Reduz a largura do cabeçalho */
-            margin: 0 auto;
-            background: #e0e7ff; /* Fundo mais claro para contraste com o logo */
+            padding: 15px 0; /* Altura ajustada */
+            background: #e0e7ff; /* Fundo mais claro */
             color: #333;
+            width: 100%; /* Largura completa da página */
         }
         header img {
-            width: 250px; /* Aumenta o tamanho do logotipo */
-            margin-bottom: 10px;
+            width: 250px; /* Tamanho do logotipo */
         }
         nav a {
             margin: 0 15px;
@@ -36,28 +34,11 @@
             margin-top: 30px;
             line-height: 1.6;
         }
-        .course-section {
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 600px;
-            border: 2px solid #007bff;
-            border-radius: 8px;
-            background-color: #e6f2ff;
-        }
-        .course-section h2 {
+        .course-highlight {
             color: #007bff;
-            font-size: 1.5em;
-        }
-        .course-links a {
-            display: block;
-            margin: 10px 0;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
             font-size: 1.3em;
-        }
-        .course-links a:hover {
-            color: #0056b3;
+            font-weight: bold;
+            margin: 20px 0;
         }
         footer {
             padding: 20px;
@@ -80,16 +61,13 @@
         <a href="https://github.com/UniRobotica">Outros Repositórios</a>
     </nav>
 
-    <div class="course-section">
-        <h2>Curso em Destaque</h2>
-        <div class="course-links">
-            <a href="https://pyton.unirobotica.com.br">Curso de Python Aplicado à Robótica</a>
-        </div>
-    </div>
-
     <div class="content">
         <h2>Sobre o UniRobótica</h2>
         <p>O UniRobótica é uma plataforma de aprendizado e desenvolvimento de robótica com foco em pesquisa e educação. Aqui você encontrará recursos, cursos e projetos voltados para a robótica educacional e industrial.</p>
+
+        <p class="course-highlight">
+            <a href="https://pyton.unirobotica.com.br">Curso de Python Aplicado à Robótica</a>
+        </p>
 
         <h2>Projetos Destacados</h2>
         <ul>
