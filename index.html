@@ -7,97 +7,69 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
             color: #333;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9fb;
         }
         header {
             padding: 20px;
-            background: #2c3e50;
+            background: #333;
             color: #fff;
-            text-align: center;
+        }
+        header img {
+            width: 150px;
+            margin-bottom: 10px;
         }
         h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p.subtitle {
-            font-size: 1.2em;
             margin-top: 10px;
+            font-size: 2em;
         }
-        nav {
-            background-color: #34495e;
-            padding: 10px 0;
-            text-align: center;
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: -10px;
+            color: #bbb;
         }
         nav a {
-            color: #ecf0f1;
             margin: 0 15px;
+            color: #007bff;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover {
-            color: #f1c40f;
+            text-decoration: underline;
         }
         .content {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            text-align: center;
+            margin-top: 30px;
             line-height: 1.6;
         }
-        .highlight-course {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #e74c3c;
-            color: #fff;
+        .course-links {
+            margin-top: 20px;
+            border: 2px solid #007bff;
+            display: inline-block;
+            padding: 10px 20px;
             border-radius: 8px;
-            font-size: 1.2em;
+            background-color: #e6f2ff;
+        }
+        .course-links a {
+            color: #007bff;
+            text-decoration: none;
             font-weight: bold;
         }
-        .highlight-course a {
-            color: #fff;
-            font-size: 1.2em;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #c0392b;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .highlight-course a:hover {
-            background-color: #e74c3c;
-        }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 8px 0;
-        }
-        li a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        li a:hover {
-            text-decoration: underline;
-            color: #3498db;
+        .course-links a:hover {
+            color: #0056b3;
         }
         footer {
-            padding: 15px;
-            background: #2c3e50;
-            color: #bdc3c7;
-            text-align: center;
-            margin-top: 30px;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://github.com/UniRobotica/home/raw/main/UniRoboticaAzulSemFundo.png" alt="Logo UniRobótica">
         <h1>UniRobótica</h1>
         <p class="subtitle">Explore nossos projetos e cursos de robótica para transformar o futuro.</p>
     </header>
@@ -111,26 +83,22 @@
     </nav>
 
     <div class="content">
-        <div class="highlight-course">
-            <h2>Destaque: Curso de Python</h2>
-            <p>Domine Python para robótica com nosso curso exclusivo.</p>
-            <a href="https://python.unirobotica.com.br">Acessar Curso de Python</a>
-        </div>
-
         <h2>Sobre o UniRobótica</h2>
-        <p>O UniRobótica é uma plataforma de aprendizado em robótica, com foco em pesquisa e educação. Aqui você encontra recursos, cursos e projetos de robótica educacional e industrial para expandir seus conhecimentos.</p>
+        <p>O UniRobótica é uma plataforma de aprendizado e desenvolvimento de robótica com foco em pesquisa e educação. Aqui você encontrará recursos, cursos e projetos voltados para a robótica educacional e industrial.</p>
 
         <h2>Projetos Destacados</h2>
         <ul>
             <li><a href="https://github.com/UniRobotica/cursos">Repositório de Cursos</a> - Conheça nossos cursos de robótica, programação e automação.</li>
             <li><a href="https://github.com/UniRobotica/MoveRoboEsp32Wifi">Move Robô ESP32 Wi-Fi</a> - Controle robôs via ESP32 com conexão Wi-Fi.</li>
-            <li><a href="https://github.com/UniRobotica/Petri-nets">Petri Nets</a> - Projetos e estudos sobre redes de Petri.</li>
+            <li><a href="https://github.com/UniRobotica/Petri-nets">Petri Nets</a> - Projetos e estudos relacionados a redes de Petri.</li>
             <li><a href="https://github.com/UniRobotica/VSSS-BahiaRT-Testes">VSSS Bahia RT</a> - Testes e desenvolvimento para o sistema de visão de robôs.</li>
         </ul>
 
         <h2>Cursos</h2>
         <p>Acesse nossos cursos para se aprofundar em tópicos específicos de robótica:</p>
-        <p><a href="https://cursos.unirobotica.com.br">Todos os Cursos da UniRobótica</a></p>
+        <div class="course-links">
+            <a href="https://pyton.unirobotica.com.br">Curso de Python Aplicado à Robótica</a>
+        </div>
     </div>
 
     <footer>
